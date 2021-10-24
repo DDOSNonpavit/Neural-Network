@@ -3,7 +3,7 @@ import numpy as np
 
 def h(X):
     w = np.array([1,1])
-    b = -0.8
+    b = -0.9
     a = np.dot(X,w) + b
     return (a>=0).astype(int)
 
