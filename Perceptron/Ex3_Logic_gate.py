@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 mx,my = np.meshgrid(np.linspace(-0.5,1.5,200),np.linspace(-0.5,1.5,200))
 mX = np.array([mx.ravel(),my.ravel()]).T
 mz = h(mX).reshape(200,-1)
-plt.gca(aspect=1)
+plt.gca()
 plt.contourf(mx,my,mz,cmap='summer')
 plt.scatter(X[:,0],X[:,1],100,c=h(X),edgecolor='r',marker='D',cmap='hot')
 plt.show()
