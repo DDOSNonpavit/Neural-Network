@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 mx,my = np.meshgrid(np.linspace(0,60,200),np.linspace(0,30,200))
 mX = np.array([mx.ravel(),my.ravel()]).T
 mz = h(mX).reshape(200,-1)
-plt.gca(aspect=1)
+plt.gca()
 plt.contourf(mx,my,mz,cmap='hot')
 plt.xlabel(u'๒๐ บาท',family='Tahoma',size=14)
 plt.ylabel(u'๕๐ บาท',family='Tahoma',size=14)
